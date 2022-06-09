@@ -1,0 +1,30 @@
+/* 최대 사이즈 768, 모바일 */
+@media screen and (max-width: 768px){
+
+    .window_icon{
+        background-image: none;
+        background-color: white;
+        border-radius: 50px;
+        border: solid 3px gray;
+        margin: 0 auto;
+    }
+
+    .window_icon:hover{
+        background-image: none;
+        background-color: #1e7294;
+        border: solid 3px white;
+    }
+
+    .footerbar{
+        width: 100%;
+        height: 300px;
+    }
+
+    .underapp{
+        display: none;
+    }
+
+    #time{
+        display: none;
+    }
+}

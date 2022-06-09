@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 메인 네비게이션 부분 -->
+    <header>
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="nav_menu">
+                <li class="nowpage"><a href="photo.html">PHOTO</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="program.html">PROGRAMMING</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+            <ul class="nav_icon">
+                <li><img src="./img/11.png" alt=""></li>
+                <li><img src="./img/22.png" alt=""></li>
+                <a href="index.html"><li id="close"></li></a> 
+            </ul>
+
+            <a href="#" class="nav_toggle">
+            </a>
+        </nav>
+    </header>
+
+     <!-- 이미지 영역 서브메뉴 -->
+    <section>
+        <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">REST</li>
+                    <li class="tab-link" data-tab="tab-2">PURPLE</li>
+                    <li class="tab-link" data-tab="tab-3">FOOD</li>
+                </ul>
+        
+                <div id="tab-1" class="tab-content current">
+
+                    <div class="port_text">
+                        <h1>REST, ROOM</h1>
+                        <P>휴식과 방 안의 나른함. 그 분위기만의 시원하면서도 따뜻한 느낌을 살리는 인물사진이다. <br> 창문으로 따뜻하게 들어오는 자연광을 이용하여 자연스럽게 지는 그림자들을 담았다. </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/ph1.png" alt=""></li>
+                            <li><img src="./img/ph2.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content">
+                    <div class="port_text">
+                        <h1>PURPLE MAKEUP</h1>
+                        <P>보라색 메이크업을 주제로 촬영한 컨셉사진이다. <br> 온통 보라색 스튜디오를 찾아서 보라색 옷을 입고 보라색 메이크업을 했다. <br> 메이크업 아티스트와 콜라보 작업을 진행했던 작업이며 신비로운 느낌을 주려고 했다. </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/ph4.jpg" alt=""></li>
+                            <li><img src="./img/ph3.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-3" class="tab-content">
+                    <div class="port_text">
+                        <h1>FOOD PHOTOGRAPHY</h1>
+                        <P>반년동안 음식사진을 많이 찍었다. 쿠팡이츠에 올라가는 음식사진들이다. <br>생각보다 음식사진은 인물보다 더 신경써야할 부분이 많다. </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/ph5.png" alt=""></li>
+                            <li><img src="./img/ph6.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- footer 부분 -->
+    <section id="underbar">
+        <div class="window_icon"></div>
+        <ul class="underapp">
+            <li><img src="./img/undericon.png" alt=""></li>
+            <li><img src="./img/undericon04.png" alt=""></li>
+            <li><img src="./img/undericon03.png" alt=""></li>
+            <li><img src="./img/undericon02.png" alt=""></li>
+        </ul>
+        <div id="time">
+            <ul>
+                <li id="time_text1"></li>
+                <li id="time_text2"></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footerbar">
+        <div class="footer_icon">
+            <ul>
+                <li><img src="./img/footer01.png" width="25"></li>
+                <li><img src="./img/footer02.png" width="25"></li>
+                <li><img src="./img/footer03.png" width="25"></li>
+                <li><img src="./img/footer04.png" width="25"></li>
+                <li><img src="./img/footer05.png" width="25"></li>
+            </ul>
+        </div>
+        <div class="footer_nav">
+            <h4>SITE MAP</h4>
+            <ul>
+                <li><a href="photo.html"><img src="./img/f1.png" width="15"> PHOTO</a></li>
+                <li><a href="design.html"><img src="./img/f2.png" width="15"> DESIGN</a></li>
+                <li><a href="video.html"><img src="./img/f3.png" width="15"> VIDEO</a></li>
+                <li><a href="program.html"><img src="./img/f4.png" width="15"> PROGRAMMING</a></li>
+                <li><a href="contacts.html"><img src="./img/f5.png" width="15"> CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <a href="index.html"><img src="./img/logo.png" width="100"></a>
+            <p>Copyright(c) 2022. <br> BOYOUNG. <br> ALL rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+	
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+        });
+    </script>
+</body>
+</html>

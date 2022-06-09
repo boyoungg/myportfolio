@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+</head>
+<body>
+
+
+    <section class="contents_pc">
+        <div class="pcIcon">
+            <ul>
+                <li><img src="./img/pc_icon_2.png" width="60" class="dragimg"></li>
+                <li><img src="./img/pc_icon_3.png" width="60" class="dragimg"></li>
+                <li><img src="./img/pc_icon_1.png" width="60" class="dragimg"></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <a href="contacts.html"><img src="./img/contact.png" alt=""  class="dragimg"></a>
+        </div>
+
+        <div class="mainIcon">
+            <a href="photo.html"><div class="icon Btn_01 dragimg"></div></a>
+            <a href="video.html"><div class="icon Btn_02 dragimg"></div></a>
+
+            <div class="clear"></div>
+
+            <a href="design.html"><div class="icon Btn_03 dragimg"></div></a>
+            <a href="program.html"><div class="icon Btn_04 dragimg"></div></a>
+        </div>
+    </section>
+
+    <section class="contents_mobile">
+        <div class="mobIcon">
+            <div class="icon"><a href="video.html"><img src="./img/mobile_app_1.png" width="100"></a></div>
+            <div class="icon"> <a href="design.html"><img src="./img/mobile_app_2.png" width="100"></a></div>
+            <div class="clear"></div>
+            <div class="icon"> <a href="photo.html"><img src="./img/mobile_app_3.png" width="100"></a></div>
+            <div class="icon"><a href="program.html"><img src="./img/mobile_app_4.png" width="100"></a></div>
+        </div>
+
+        <div class="contacts">
+            <a href="contacts.html"><img src="./img/mobile_contact.png"></a>
+        </div>
+    </section>
+
+
+    <!-- footer 부분 -->
+    <section id="underbar">
+        <div class="window_icon"></div>
+        <ul class="underapp">
+            <li><img src="./img/undericon.png" alt=""></li>
+            <li><img src="./img/undericon04.png" alt=""></li>
+            <li><img src="./img/undericon03.png" alt=""></li>
+            <li><img src="./img/undericon02.png" alt=""></li>
+        </ul>
+        <div id="time">
+            <ul>
+                <li id="time_text1"></li>
+                <li id="time_text2"></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footerbar">
+        <div class="footer_icon">
+            <ul>
+                <li><img src="./img/footer01.png" width="25"></li>
+                <li><img src="./img/footer02.png" width="25"></li>
+                <li><img src="./img/footer03.png" width="25"></li>
+                <li><img src="./img/footer04.png" width="25"></li>
+                <li><img src="./img/footer05.png" width="25"></li>
+            </ul>
+        </div>
+        <div class="footer_nav">
+            <h4>SITE MAP</h4>
+            <ul>
+                <li><a href="photo.html"><img src="./img/f1.png" width="15"> PHOTO</a></li>
+                <li><a href="design.html"><img src="./img/f2.png" width="15"> DESIGN</a></li>
+                <li><a href="video.html"><img src="./img/f3.png" width="15"> VIDEO</a></li>
+                <li><a href="program.html"><img src="./img/f4.png" width="15"> PROGRAMMING</a></li>
+                <li><a href="contacts.html"><img src="./img/f5.png" width="15"> CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <a href="index.html"><img src="./img/logo.png" width="100"></a>
+            <p>Copyright(c) 2022. <br> BOYOUNG. <br> ALL rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        window.onload = function(){
+            var myDate;
+            var year;
+            var month;
+            var date;
+            var day;
+            var hour;
+            var minute;
+            var second;
+            var ampm;
+            var myDay = ["일", "월", "화", "수", "목", "금", "토"];
+    
+            var myTime = function () {
+                myDate = new Date();
+                year = myDate.getFullYear();
+                month = myDate.getMonth() + 1;
+                date = myDate.getDate();
+                day = myDate.getDay();
+                hour = myDate.getHours();
+                minute = myDate.getMinutes();
+                second = myDate.getSeconds();
+    
+                if (hour < 13) {
+                    ampm = "오전";
+                } else {
+                    ampm = "오후";
+                }
+                if (hour > 12) {
+                    hour = hour - 12;
+                }
+                if (minute < 10) {
+                    minute = "0" + minute;
+                }
+                if (second < 10) {
+                    second = "0" + second;
+                }
+                if(month < 10){
+                    month = "0" + month
+                }
+                if(date < 10){
+                    date = "0" + date
+                }
+    
+                document.getElementById("time_text2").innerText = year + "-" +  month + "-" + date;
+                document.getElementById("time_text1").innerText =  ampm + hour + ":" + minute;
+    
+            }
+            // 반복 함수
+            setInterval(function () {
+                // 함수 호출
+                myTime();
+            }, 1000);
+        }
+
+        const footerBtn = document.querySelector('.window_icon');
+        const footer = document.querySelector('.footerbar')
+
+        footerBtn.addEventListener('click', ()=>{
+            footer.classList.toggle('active');
+        });
+
+        $(".dragimg").draggable({
+            cursor:"move",
+            stack:".dragimg",
+            opacity:0.8
+        });
+    </script>
+</body>
+</html>

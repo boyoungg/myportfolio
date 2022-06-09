@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 메인 네비게이션 부분 -->
+    <header>
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="photo.html">PHOTO</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li class="nowpage"><a href="program.html">PROGRAMMING</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+            <ul class="nav_icon">
+                <li><img src="./img/11.png" alt=""></li>
+                <li><img src="./img/22.png" alt=""></li>
+                <a href="index.html"><li id="close"></li></a> 
+            </ul>
+
+            <a href="#" class="nav_toggle">
+            </a>
+        </nav>
+    </header>
+
+     <!-- 이미지 영역 서브메뉴 -->
+    <section>
+        <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-7">1stGame</li>
+                    <li class="tab-link" data-tab="tab-8">TOM HARDY</li>
+                    <li class="tab-link" data-tab="tab-9">MY JEJU</li>
+                </ul>
+        
+                <div id="tab-7" class="tab-content current">
+
+                    <div class="port_text">
+                        <h1>1stGame UNITY</h1>
+                        <P>처음 배운 프로그래밍 툴 유니티를 활용하여 간단한 코인 게임을 만들었다. <br> 캐릭터가 움직이며 디자인 툴 모양의 코인을 전부 먹으면 <br> 게임이 끝나는 창이 뜨고 끝이난다. </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/pr1.png" alt=""></li>
+                            <li><img src="./img/pr2.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-8" class="tab-content">
+                    <div class="port_text">
+                        <h1>TOM HARDY WEB PAGE</h1>
+                        <P>좋아하는 해외 배우인 톰 하디를 소개하는 페이지. <br> 전체적으로 블랙 . 화이트 디자인을 사용하였다. <br> 톰하디에 대한 다양한 정보를 소개하는 페이지이다. </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/pr4.png" alt=""></li>
+                            <li><img src="./img/pr3.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab-9" class="tab-content">
+                    <div class="port_text">
+                        <h1>MY JEJU TRAVEL MAP</h1>
+                        <P>사용자가 제주도에 대한 정보를 얻으면서도 웹사이트와 상호작용 할 수 있는 <br> 재미있는 페이지를 만들어보고 싶어서 제작하였다.
+                        </P>
+                    </div>
+
+                    <div class="port_img">
+                        <ul>
+                            <li><img src="./img/pr5.png" alt=""></li>
+                            <li><img src="./img/pr6.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- footer 부분 -->
+    <section id="underbar">
+        <div class="window_icon"></div>
+        <ul class="underapp">
+            <li><img src="./img/undericon.png" alt=""></li>
+            <li><img src="./img/undericon04.png" alt=""></li>
+            <li><img src="./img/undericon03.png" alt=""></li>
+            <li><img src="./img/undericon02.png" alt=""></li>
+        </ul>
+        <div id="time">
+            <ul>
+                <li id="time_text1"></li>
+                <li id="time_text2"></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footerbar">
+        <div class="footer_icon">
+            <ul>
+                <li><img src="./img/footer01.png" width="25"></li>
+                <li><img src="./img/footer02.png" width="25"></li>
+                <li><img src="./img/footer03.png" width="25"></li>
+                <li><img src="./img/footer04.png" width="25"></li>
+                <li><img src="./img/footer05.png" width="25"></li>
+            </ul>
+        </div>
+        <div class="footer_nav">
+            <h4>SITE MAP</h4>
+            <ul>
+                <li><a href="photo.html"><img src="./img/f1.png" width="15"> PHOTO</a></li>
+                <li><a href="design.html"><img src="./img/f2.png" width="15"> DESIGN</a></li>
+                <li><a href="video.html"><img src="./img/f3.png" width="15"> VIDEO</a></li>
+                <li><a href="program.html"><img src="./img/f4.png" width="15"> PROGRAMMING</a></li>
+                <li><a href="contacts.html"><img src="./img/f5.png" width="15"> CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <a href="index.html"><img src="./img/logo.png" width="100"></a>
+            <p>Copyright(c) 2022. <br> BOYOUNG. <br> ALL rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+	
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+        });
+    </script>
+</body>
+</html>

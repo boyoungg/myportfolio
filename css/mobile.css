@@ -1,0 +1,178 @@
+body{
+    background-image: url(../img/background_pc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contents_pc{
+    display: flex;
+    margin: 40px 0 0 20px; 
+}
+
+.pcIcon{
+    width: 10%;
+    height: 800px;
+    margin-right: 230px;
+}
+
+.pcIcon li{
+
+    margin-bottom: 30px;
+
+}
+
+.contacts{
+    height: 60%;
+}
+
+.contacts img{
+    width: 100%;
+}
+
+.mainIcon{
+    width: 30%;
+    height: 800px;
+    margin-right: 20px;
+
+}
+
+.icon{
+    width: 80px;
+    height: 100px;
+    margin-bottom: 30px;
+    display: inline-block;
+    float: right;
+    margin-left: 30px;
+}
+
+.Btn_01{
+    background-image: url(../img/pc_icon_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_01:hover{
+    background-image: url(../img/pc_icon_4hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_02{
+    background-image: url(../img/pc_icon_5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_02:hover{
+    background-image: url(../img/pc_icon_5hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Btn_03{
+    background-image: url(../img/pc_icon_6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_03:hover{
+    background-image: url(../img/pc_icon_6hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_04{
+    background-image: url(../img/pc_icon_7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Btn_04:hover{
+    background-image: url(../img/pc_icon_7hover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contents_mobile{
+    display: none;
+}
+
+
+/* 최대 사이즈 768, 모바일 */
+@media screen and (max-width: 768px){
+   body{
+       background-image: none;
+       background-color: #add3ff;
+    }
+
+    .contents_pc{
+        display: none;
+    }
+
+    .contents_mobile{
+        display: flex;
+    }
+
+    .icon{
+        float: left;
+        margin: 30px;
+    }
+
+    .icon img:hover{
+        width: 110px;
+    }
+
+    .mobIcon{
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    .contacts{
+        height: 400px;
+        position: absolute;
+        top: 400px;
+        left: 10px;
+    }
+
+    .contacts img{
+        width: 100%;
+    }
+
+    .window_icon{
+        background-image: none;
+        background-color: white;
+        border-radius: 50px;
+        border: solid 3px #2d2d2d;
+        margin: 0 auto;
+    }
+
+    .window_icon:hover{
+        background-image: none;
+        background-color: #2d2d2d;
+        border: solid 3px white;
+    }
+
+    .footerbar{
+        width: 96%;
+        height: 300px;
+    }
+
+    .underapp{
+        display: none;
+    }
+
+    #time{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .pcIcon{
+        margin-right: 50px;
+    }
+
+    .contacts img{
+        width: 100%;
+    }
+}

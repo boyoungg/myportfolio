@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 메인 네비게이션 부분 -->
+    <header>
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="photo.html">PHOTO</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li class="nowpage"><a href="video.html">VIDEO</a></li>
+                <li><a href="program.html">PROGRAMMING</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+            <ul class="nav_icon">
+                <li><img src="./img/11.png" alt=""></li>
+                <li><img src="./img/22.png" alt=""></li>
+                <a href="index.html"><li id="close"></li></a> 
+            </ul>
+
+            <a href="#" class="nav_toggle">
+            </a>
+        </nav>
+    </header>
+
+     <!-- 이미지 영역 서브메뉴 -->
+    <section>
+        <div class="container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-10">AQUARIUM</li>
+                    <li class="tab-link" data-tab="tab-11">PETDOC</li>
+                </ul>
+        
+                <div id="tab-10" class="tab-content current">
+                    <div class="video_layout">
+                        <div class="video_txt">
+                            <h2>3DMAX AQUARIUM</h2>
+                            <p>3D MAX를 활용한 팀플 영상 작업물이다. 아쿠아리움을 주제로 작업하였다.</p>
+                        </div>
+                        <video width="1000" autoplay loop muted controls>
+                            <source src="./img/vid1.mp4" type="video/mp4">
+                            <source src="./img/vid1.mp4" type="video/webm">
+                            <source src="./img/vid1.mp4" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+
+                <div id="tab-11" class="tab-content current">
+                    <div class="video_layout">
+                        <div class="video_txt">
+                            <h2>PETDOC</h2>
+                            <p>펫닥 서비스 어플 광고 영상이다. 펫닥 사용법에 관한 주제로 작업하였다.</p>
+                        </div>
+                        <video width="1000" autoplay loop muted controls>
+                            <source src="./img/vid2.mp4" type="video/mp4">
+                            <source src="./img/vid2.mp4" type="video/webm">
+                            <source src="./img/vid2.mp4" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- footer 부분 -->
+    <section id="underbar">
+        <div class="window_icon"></div>
+        <ul class="underapp">
+            <li><img src="./img/undericon.png" alt=""></li>
+            <li><img src="./img/undericon04.png" alt=""></li>
+            <li><img src="./img/undericon03.png" alt=""></li>
+            <li><img src="./img/undericon02.png" alt=""></li>
+        </ul>
+        <div id="time">
+            <ul>
+                <li id="time_text1"></li>
+                <li id="time_text2"></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footerbar">
+        <div class="footer_icon">
+            <ul>
+                <li><img src="./img/footer01.png" width="25"></li>
+                <li><img src="./img/footer02.png" width="25"></li>
+                <li><img src="./img/footer03.png" width="25"></li>
+                <li><img src="./img/footer04.png" width="25"></li>
+                <li><img src="./img/footer05.png" width="25"></li>
+            </ul>
+        </div>
+        <div class="footer_nav">
+            <h4>SITE MAP</h4>
+            <ul>
+                <li><a href="photo.html"><img src="./img/f1.png" width="15"> PHOTO</a></li>
+                <li><a href="design.html"><img src="./img/f2.png" width="15"> DESIGN</a></li>
+                <li><a href="video.html"><img src="./img/f3.png" width="15"> VIDEO</a></li>
+                <li><a href="program.html"><img src="./img/f4.png" width="15"> PROGRAMMING</a></li>
+                <li><a href="contacts.html"><img src="./img/f5.png" width="15"> CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <a href="index.html"><img src="./img/logo.png" width="100"></a>
+            <p>Copyright(c) 2022. <br> BOYOUNG. <br> ALL rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+	
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+        });
+    </script>
+</body>
+</html>

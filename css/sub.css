@@ -1,0 +1,178 @@
+.container{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    /* border: solid 1px red; */
+}
+
+ul.tabs li{
+    display: inline-block;
+    background: #e6e6e6;
+    color: rgb(56, 56, 56);
+    padding: 10px 85px 5px 85px;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0 ;
+}
+  
+ul.tabs li.current{
+    background: #00A8E8;
+    color: white;
+    font-weight: 500;
+}
+
+.tab-content{
+    display: none;
+    background: #999999;
+    padding: 12px;
+
+}
+  
+.tab-content.current{
+    display: flex;
+}
+  
+.port_text{
+    width: 40%;
+    margin: 30px;
+    height: 300px;
+    /* border: solid 1px red; */
+}
+
+.port_text h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'ROKAFSansBold';
+    margin: 30px 0 0 0;
+}
+
+.port_text p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.port_img{
+    width: 60%;
+    height: 500px;
+    /* border: solid 1px red; */
+}
+
+#tab-1{
+    height: 765px;
+    background-image: url(../img/ph1bg.png);
+}
+
+#tab-2{
+    height: 765px;
+    background-image: url(../img/ph2bg.png);
+}
+
+#tab-3{
+    height: 765px;
+    background-image: url(../img/ph3bg.png);
+}
+
+#tab-4{
+    height: 765px;
+    background-image: url(../img/ph4bg.png);
+}
+
+#tab-5{
+    height: 765px;
+    background-image: url(../img/ph5bg.png);
+}
+
+#tab-6{
+    height: 765px;
+    background-image: url(../img/ph6bg.png);
+}
+
+#tab-7{
+    height: 765px;
+    background-image: url(../img/ph7bg.png);
+}
+
+#tab-8{
+    height: 765px;
+    background-image: url(../img/ph8bg.png);
+}
+
+#tab-9{
+    height: 765px;
+    background-image: url(../img/ph9bg.png);
+}
+
+#tab-10{
+    height: 765px;
+    background-image: url(../img/ph10bg.png);
+}
+
+#tab-11{
+    height: 765px;
+    background-image: url(../img/ph11bg.png);
+}
+
+.port_img li{
+    display: inline-block;
+}
+
+.port_img li img{
+    width: 100%;
+}
+
+.video_layout{
+    margin: 0 auto;
+}
+
+.video_txt h2{
+    width: 100%;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'ROKAFSansBold';
+    text-align: center;
+    margin-top: 30px;
+}
+
+.video_txt p{
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px){
+
+    ul.tabs li{
+        display: inline-block;
+        background: #e6e6e6;
+        color: rgb(56, 56, 56);
+        padding: 15px 35px 5px 35px;
+        cursor: pointer;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .tab-content.current{
+        display: block;
+    }
+
+    .port_img{
+        width: 100%;
+    }
+
+    .port_text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .port_text p{
+        font-size: 18px;
+    }
+
+    video{
+        width: 100%;
+    }
+}

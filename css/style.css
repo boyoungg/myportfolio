@@ -1,0 +1,522 @@
+/* 폰트 설정 css */
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ROKAFSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* css 초기화 코드 , 구글링 복붙했습니다. */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* 미디어 쿼리 사용 반응형 메인페이지 css */
+/* 1920 1080 */
+body{
+    overflow-x: hidden;
+    font-family: 'NEXON Lv2 Gothic';    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav{
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c7cacc;
+}
+
+.nav_logo{
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.nav_menu{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav_menu li{
+    margin-right: 10px;
+    padding: 8px 30px;
+    color: #363636;
+    font-family: 'NEXON Lv2 Gothic';
+}
+
+.nav_menu li:hover{
+    background-color: #00A8E8;
+    color: white;
+}
+
+.nav_menu li.nowpage{
+    background-color: #00A8E8;
+    color: white;
+}
+
+.nav_menu li.nowpage:hover{
+    background-color: #363636;
+    color: white;
+}
+
+.nav_icon{
+    list-style: none;
+    display: flex;
+}
+
+.nav_icon li{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.window_icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    display: flex;
+    background-image: url(../img/windowbtn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.window_icon:hover{
+    background-image: url(../img/windowhover.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.underapp{
+    display: flex;
+    float: left;
+}
+
+.underapp li{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#underbar{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    background-color: #EFEFEF;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerbar{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: #474747e7;
+    border-radius: 0;
+    z-index: 9999;
+    position: absolute;
+    bottom: 50px;
+    z-index: 999;
+    display: none;
+}
+
+.footerbar.active{
+    display: flex;
+    z-index: 999;
+}
+
+.footer_icon{
+    width: 10%;
+    height: 480px;
+    margin: 10px 0 0 5px;
+}
+
+.footer_icon li{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.footer_icon li:first-child{
+    margin-top: 230px;
+}
+
+.footer_nav{
+    width: 50%;
+    height: 480px;
+    border-left: solid 1px rgb(129, 129, 129);
+    margin: 10px 0 0 10px;
+}
+
+.footer_nav h4{
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: solid 1px white;
+    padding: 10px 0 8px 10px;
+}
+
+.footer_nav li{
+    text-align: left;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer_nav li:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer_info{
+    width: 30%;
+    height: 480px;
+    border-left: solid 1px rgb(129, 129, 129);
+    margin-top: 10px;
+}
+
+.footer_info img{
+    margin: 0 auto;
+    padding-top: 390px;
+}
+
+.footer_info p{
+    font-size: 10px;
+    color: rgb(146, 146, 146);
+    text-align: center;
+    margin: 10px 0 0 10px;
+    line-height: 150%;
+}
+
+
+#time{
+    display: flex;
+    margin-right: 30px;
+    color: rgb(19, 19, 19);
+    font-size: 13px;
+}
+
+.nav_toggle{
+    display: none;
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/toggle.png);
+}
+
+.time ul{
+    list-style-type: none;
+}
+
+#time_text1{
+    float: right;
+    padding-bottom: 5px;
+}
+
+#close{
+    background-image: url(../img/33.png);
+}
+
+#close:hover{
+    background-image: url(../img/44.png);
+}
+
+
+/* contacts.html*/
+#contact_input{
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 160px;
+    display: flex;
+}
+
+#inputBox{
+    width: 70%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+#inputBox h1{
+    font-size: 30px;
+    font-family: 'NEXON Lv1 Gothic OTF Light';
+    color: #00A8E8;
+    margin: 50px 0 0 50px;
+}
+
+#inputBox table{
+    margin: 30px 0 0 50px;
+}
+
+tr, td{
+    margin: 10px;
+    padding: 10px;
+}
+
+.tdStyle{
+    width: 85%;
+}
+
+select{
+    width: 100%;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(233, 233, 233, 0.479);
+}
+
+input {
+    width: 100%;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(233, 233, 233, 0.479)
+}
+
+button{
+    width: 50%;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(233, 233, 233, 0.479);
+    float: right;
+}
+
+button:hover{
+    background-color: #00A8E8;
+    color: white;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    border: solid 1px #00A8E8;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: both;
+}
+#contact_list{
+    width: 30%;
+    background-image: url(../img/conimg.png);
+    background-repeat: no-repeat;
+}
+
+#contact_list h2{
+    font-size: 35px;
+    text-align: center;
+    margin: 100px 0 30px 0;
+    color: white;
+    font-family: 'ROKAFSansBold';
+}
+
+#contact_list span{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#contact_list p{
+    color: white;
+    text-align: center;
+    line-height: 180%;
+    padding-top: 20px;
+}
+
+/* 최대 사이즈 768, 모바일 */
+@media screen and (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 20px;
+    }
+
+    .nav_logo{
+        margin: 0 auto;
+    }
+
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .nav_menu.active{
+        display: flex;
+    }
+
+    .nav_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_icon{
+        display: none;
+    }
+
+    .nav_toggle{
+        display: block;
+    }
+
+    .nav_toggle:hover{
+        background-image: url(../img/togglehover.png);
+    }
+
+    .footer_icon{
+        display: none;
+    }
+    .footer_info{
+        width: 50%;
+    }
+    .footer_nav,
+    .footer_info{
+        height: 280px;
+    }
+
+    .footer_info img{
+        padding-top: 150px;
+    }
+
+    .footer_info p{
+        font-size: 15px;
+        text-align: center;
+        line-height: 200%;
+    }
+
+    #contact_input{
+        display: block;
+        margin-top: -20px;
+        height: 800px;
+    }
+
+    #inputBox{
+        width: 100%;
+        height: 500px;
+        border-radius: 0;
+    }
+
+    #inputBox h1{
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    input,select,textarea {
+        width: 80%;
+    }
+    
+    button{
+        float: left;
+    }
+
+    #contact_list{
+        width: 100%;
+    }
+
+    #contact_list h2{
+        padding-top: 50px;
+    }
+
+    #contact_list .last{
+        padding-bottom: 50px;
+    }
+}
